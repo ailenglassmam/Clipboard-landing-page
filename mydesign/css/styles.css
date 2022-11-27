@@ -1,0 +1,465 @@
+/*tipografias*/
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;300;400;600&display=swap');
+
+/*colores*/
+:root {
+    --title-color: hsl(210, 10%, 33%);
+    --p-color: hsl(201, 11%, 66%);
+    --button-ppal: hsl(171, 66%, 44%);
+    --button-sec: hsl(233, 100%, 69%);
+    --footer-color: rgba(245, 246, 248, 1);
+    --footer-link: hsl(210, 10%, 33%);
+    --button-text: white;
+    --creator-background: hsl(216, 7%, 14%);
+}
+
+    /*configuración general de la página*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+/*configuración general de los titulos*/
+h1, h2, h3 {
+    font-weight: bold !important;
+    color: var(--title-color);
+}
+
+h2 {
+    margin-bottom: 1.5rem;
+}
+
+h3 {
+    margin-bottom: 1rem;
+}
+
+/*configuración general de p*/
+
+p {
+    font-size: 18px;
+    color: var(--p-color);
+}
+
+/*configuración general tamaño section*/
+
+section {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5%;
+    margin-top: 10%;
+}
+
+/*configuración header*/
+
+header {
+    width: 100vw;
+    height: 50vh;
+    background-image: url("../images/bg-header-desktop.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 15rem;
+}
+
+header img {
+    margin-top: 8%;
+    margin-bottom: 3%;
+}
+
+header h1 {
+    margin-bottom: 2%;
+}
+
+/*configuración botones*/
+
+.green-button {
+    background-color: var(--button-ppal);
+    color: var(--button-text);
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+.violet-button {
+    background-color: var(--button-sec);
+    color: var(--button-text);
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+.green-button:hover {
+    box-shadow: 0px 0px 10px 5px #177B6B;
+    color: white;
+}
+
+.violet-button:hover {
+    box-shadow: 0px 0px 10px 5px #3B458F;
+    color: white;
+}
+
+/*configuración p ppales*/
+
+.description-ppal {
+    margin-bottom: 4%;
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.devices {
+    width: 100%;
+}
+
+/*configurción section 1*/
+
+#description {
+    display: flex;
+    flex-direction: column;
+}
+
+/*configuración tools y sus elementos internos*/
+
+#tools {
+    display: flex;
+    flex-direction: row;
+}
+
+#computer-img {
+    width: 50%;
+    height: 70vh;
+    background-image: url(../images/image-computer.png);
+    background-repeat: no-repeat;
+    background-position: right;
+
+}
+
+#tool-description {
+    padding-left: 10%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#tool-description p:nth-child(1n) {
+    width: 25rem;
+    margin-bottom: 3rem;
+}
+
+/*section 2 - clipboard*/
+
+#clipboard {
+    height: fit-content;
+}
+
+#clipboard img {
+    width: 60%;
+}
+
+/*section 3 - configuración workflow*/
+
+#workflow-description {
+    height: fit-content;
+}
+
+#workflow {
+    display: flex;
+    flex-direction: row;
+    margin: 0 5rem;
+}
+
+.col {
+    width: 35%;
+    padding: 0 1rem;
+}
+
+.col h3 {
+    margin-top: 1rem;
+}
+
+.row-img {
+    height: 4rem;
+    align-items: center;
+}
+
+/*section 4 - configuración marcas*/
+
+#marcas {
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+#marcas img {
+    height: 100%;
+    padding: 0 0.5rem;
+}
+
+/*configuración descargas*/
+
+#descargas {
+    height: 40vh;
+}
+
+/*configuración footer*/
+
+footer {
+    background-color: var(--footer-color);
+    width: 100vw;
+    height: 15rem;
+    display: flex;
+    flex-direction: row;
+    padding: 0 5rem;
+    justify-content: space-between;
+}
+
+footer a {
+    color: var(--footer-link);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--button-ppal) ;
+}
+
+#img-links {
+    float: left;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#img-social-media {
+    float: right;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:1rem;
+}
+
+#logo-footer {
+    height: 70px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 4rem;
+}
+
+/*configuración atribución*/
+
+#creator {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    background-color: var(--creator-background);
+    color: var(--button-text);
+}
+
+.attribution {
+    font-size: 15px;
+    text-align: center;
+}
+.attribution a {
+    color: var(--button-ppal);
+    text-decoration: none;
+}
+
+@media all and (max-width: 768px) {
+section {
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+
+    /*configuración header*/
+
+header {
+    height: fit-content;
+    text-align: center;
+    padding-top: 5rem;
+    padding: 0 1rem;
+}
+
+header img {
+    margin-top: 8rem;
+    margin-bottom: 15%;
+}
+
+header h1 {
+    margin-bottom: 1rem;
+}
+
+.description-ppal {
+    font-size: 0.9rem;
+    margin-bottom: 4rem;
+    width: 100%;
+}
+
+/*configuración botones*/
+
+header {
+    margin-bottom: 0;
+}
+
+.botones {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#description {
+    margin-top: 10rem;
+    padding: 0 2rem;
+}
+
+#description h2 {
+    margin-bottom: 1rem;
+}
+
+/*section tools*/
+
+#tools {
+    display: flex;
+    flex-direction: column;
+}
+
+#computer-img {
+    width: 100%;
+    height: 70vh;
+    background-position: center;
+    background-size:100%;
+}
+
+#tool-description {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#tool-description p:nth-child(1n) {
+    width: 100%;
+    margin-bottom: 3rem;
+    font-size: 0.8rem;
+}
+
+/*section clipboard*/
+
+#clipboard {
+    width: auto;
+    padding: 0 2rem;
+}
+
+#clipboard img {
+    width: 100%;
+}
+
+/*section workflow*/
+
+#workflow-description {
+    width: 100%;
+    margin: 5rem 0;
+    padding: 0 2rem;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+#workflow {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+}
+
+.col {
+    width: 100%;
+    padding: 0;
+}
+
+.row-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col p {
+    font-size: 0.8rem;
+}
+
+#marcas {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+#descargas {
+    width: 100%;
+    height: fit-content;
+    padding: 5rem 2rem 0;
+}
+
+#descargas h2 {
+    margin-bottom: 2rem;
+}
+
+footer {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+#img-links {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.links {
+    margin: 0;
+    text-align: center;
+}
+
+.links a {
+    margin: 1rem 0;
+}
+
+#img-social-media {
+    margin: 2rem 0;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#creator {
+ padding: 2rem;
+}
+
+}
+
+@media all and (max-width: 425px) {
+    #computer-img {
+        width: 100%;
+        height: 40vh;
+        background-position: center;
+        background-size:100%;
+    }
+}
