@@ -54,10 +54,10 @@ section {
 /*configuración header*/
 
 header {
-    width: 100vw;
+    width: 100%;
     height: 50vh;
     background-image: url("../images/bg-header-desktop.png");
-    background-size:contain;
+    background-size:cover;
     background-repeat: no-repeat;
 }
 
@@ -279,58 +279,45 @@ footer a:hover {
 }
 
 @media all and (max-width: 768px) {
-section {
-    width: auto;
-    height: auto;
-    text-align: center;
-}
+    section {
+        width: auto;
+        height: auto;
+        text-align: center;
+        padding: 0 2rem;
+    }
+    
+        /*configuración header*/
+    
+    header {
+        height: fit-content;
+        text-align: center;
+        padding-top: 5rem;
+        padding: 0 1rem;
+        margin-bottom: 10rem;
+    }
+    
+    header img {
+        margin-top: 8rem;
+        margin-bottom: 15%;
+    }
+    
+    header h1 {
+        margin-bottom: 1rem;
+    }
+    
+    .description-ppal {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+        width: 70%;
+    }
 
-    /*configuración header*/
+    /* botones config */
 
-header {
-    height: fit-content;
-    text-align: center;
-    padding-top: 5rem;
-    padding: 0 1rem;
-}
+    .botones {
+        margin: 3rem 0;
+    }
 
-header img {
-    margin-top: 8rem;
-    margin-bottom: 15%;
-}
-
-header h1 {
-    margin-bottom: 1rem;
-}
-
-.description-ppal {
-    font-size: 0.9rem;
-    margin-bottom: 4rem;
-    width: 100%;
-}
-
-/*configuración botones*/
-
-header {
-    margin-bottom: 0;
-}
-
-.botones {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
-#description {
-    margin-top: 10rem;
-    padding: 0 2rem;
-}
-
-#description h2 {
-    margin-bottom: 1rem;
-}
-
-/*section tools*/
+    /*section tools*/
 
 #tools {
     display: flex;
@@ -338,8 +325,9 @@ header {
 }
 
 #computer-img {
-    width: 100%;
+    width: 80%;
     height: 70vh;
+    margin: auto;
     background-position: center;
     background-size:100%;
 }
@@ -356,7 +344,7 @@ header {
 #tool-description p:nth-child(1n) {
     width: 100%;
     margin-bottom: 3rem;
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 /*section clipboard*/
@@ -402,7 +390,7 @@ header {
 }
 
 .col p {
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 #marcas {
@@ -455,11 +443,35 @@ footer {
 
 }
 
-@media all and (max-width: 425px) {
-    #computer-img {
-        width: 100%;
-        height: 40vh;
-        background-position: center;
-        background-size:100%;
-    }
+@media all and (max-width: 480px) {
+
+
+/*configuración botones*/
+
+header {
+    margin-bottom: 0;
+}
+
+.botones {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#description {
+    margin-top: 10rem;
+    padding: 0 2rem;
+}
+
+#description h2 {
+    margin-bottom: 1rem;
+}
+
+#computer-img {
+    width: 100%;
+    height: 40vh;
+    background-position: center;
+    background-size:100%;
+}
+
 }
